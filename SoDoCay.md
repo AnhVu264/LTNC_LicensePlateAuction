@@ -1,29 +1,68 @@
 ```mermaid
 classDiagram
-    class Entity{
+    class Entity {
         <<abstract>>
         -String id
-        -String name
-        +getInfo()* String
         +getId() String
+        +printInfo()* void
     }
+
     class User {
         <<abstract>>
         -String username
-        -String passwordHash
-        -String fullName
-        -String email
-        -UserRole role
-        +hasRole(UserRole) boolean
+        -String password
+        +login(String, String) boolean
     }
-    class Bidder{
-        -double balance
-        +getInfo() String
+    class Bidder {
+        +placeBid(Auction, double) void
+        +printInfo() void
     }
-    class Seller{
-        -double balance
-        +getInfo() String
+    class Seller {
+        +addItem(Item) void
+        +updateItem(Item) void
+        +deleteItem(Item) void
+        +printInfo() void
     }
-Entity<|--User
-User<|--Bidder
+    class Admin {
+        +printInfo() void
+    }
+
+    class Item {
+        <<abstract>>
+        -String name
+        -String description
+        -double startingPrice
+        -double currentPrice
+        -Instant startTime
+        -Instant endTime
+        +printInfo() void
+    }
+    class Electronics
+    class Art
+    class Vehicle
+
+    class Auction {
+        -Item item
+        -Bidder leader
+        -String status
+        -List~BidTransaction~ bids
+        +isValidBid(double) boolean
+        +addBid(BidTransaction) void
+        +close() void
+    }
+    class BidTransaction {
+        -Bidder bidder
+        -double amount
+        -Instant time
+    }
+
+    Entity <|-- User
+    User <|-- Bidder
+    User <|-- Seller
+    User <|-- Admin
+
+    Entity <|-- Item
+    Item <|-- Electronics
+    Item <|-- Art
+    Item <|-- Vehicle
 ```
