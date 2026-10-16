@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Chạy Giao Diện",
+            "request": "launch",
+            "mainClass": "Main",
+            "vmArgs": "--module-path \"F:/Download/openjfx-27_windows-x64_bin-sdk/javafx-sdk-27/lib\" --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+}
