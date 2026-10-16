@@ -1,0 +1,16 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "f:\\Download\\openjfx-27_windows-x64_bin-sdk\\javafx-sdk-27\\lib\\javafx.base.jar",
+        "f:\\Download\\openjfx-27_windows-x64_bin-sdk\\javafx-sdk-27\\lib\\javafx.controls.jar",
+        "f:\\Download\\openjfx-27_windows-x64_bin-sdk\\javafx-sdk-27\\lib\\javafx.fxml.jar",
+        "f:\\Download\\openjfx-27_windows-x64_bin-sdk\\javafx-sdk-27\\lib\\javafx.graphics.jar",
+        "f:\\Download\\openjfx-27_windows-x64_bin-sdk\\javafx-sdk-27\\lib\\javafx.media.jar",
+        "f:\\Download\\openjfx-27_windows-x64_bin-sdk\\javafx-sdk-27\\lib\\javafx.swing.jar",
+        "f:\\Download\\openjfx-27_windows-x64_bin-sdk\\javafx-sdk-27\\lib\\javafx.web.jar",
+        "f:\\Download\\openjfx-27_windows-x64_bin-sdk\\javafx-sdk-27\\lib\\javafx-swt.jar",
+        "f:\\Download\\openjfx-27_windows-x64_bin-sdk\\javafx-sdk-27\\lib\\jdk.jsobject.jar",
+        "f:\\Download\\openjfx-27_windows-x64_bin-sdk\\javafx-sdk-27\\lib\\jfx.incubator.input.jar",
+        "f:\\Download\\openjfx-27_windows-x64_bin-sdk\\javafx-sdk-27\\lib\\jfx.incubator.richtext.jar"
+    ]
+}
